@@ -2,7 +2,7 @@ import React from "react";
 
 function MovieList(props) {
 
-  const {movie, removeMovie} = props
+  const { movie, removeMovie } = props
 
   return (
     <div className="movie-row">
@@ -13,9 +13,6 @@ function MovieList(props) {
         Delete
       </button>
 
-      <button className="hideButton">Hide</button>
-
-      <button className="showButton">Show</button>
     </div>
   );
 }
