@@ -10,16 +10,22 @@ function MovieForm(props) {
         // Pass in the input state to addMovie
         props.addMovie(input);
         // resets the Input to empty string
-        setInput("")
+        setInput('');
+
+    
+
     }
 
-    return (
+
+        return (
         <form onSubmit={handleSubmit} className="movie-form">
-            <input onChange={(e) => setInput(e.target.value)}
+            <input 
+    // Setting the input to "" after clicking AddMovie
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
                 className="movie-input"
                 placeholder="Please add a movie" />
             <button type="submit" className="addmovie-button">Add Movie</button>
-
         </form>
     )
 }
