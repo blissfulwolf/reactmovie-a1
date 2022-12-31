@@ -32,6 +32,9 @@ function App() {
     <div className="movie-app">
       <h1>Movie App Assignment 1</h1>
 
+       {/* Create the movie rows */}
+       <MovieForm addMovie={addMovie} />
+
       {/* Show / Hide the movie */}
       <div className="hideshow">
         {show ? <h3>Top Gun: Maverick </h3> : null}
@@ -43,8 +46,9 @@ function App() {
         </button>
       </div>
 
-      {/* Create the movie rows */}
-      <MovieForm addMovie={addMovie} />
+     
+
+   
 
       {/* remove the movie that is deleted */}
       {movielist.map((movie) => {
